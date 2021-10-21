@@ -1,0 +1,23 @@
+.nav { 
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+        &__links { 
+            display: flex;
+            justify-content: space-between;
+            width: 267px;
+        }
+
+        &__link { 
+            font-family: 'Source Sans Pro', sans-serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        &__logo {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: white;
+            font-weight: bold;
+        }
+    }

@@ -1,0 +1,26 @@
+@import 'fonts';
+@import 'media';
+@import 'nav';
+
+body { 
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.text { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jap-img { 
+    margin: 10px;
+}
+
+.jap-content { 
+    display: flex;
+    flex-direction: column;
+}

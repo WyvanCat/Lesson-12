@@ -1,0 +1,21 @@
+$main-font: 'Source Sans Pro', sans-serif;
+
+h1 { 
+    font-family: $main-font;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
+
+h2 { 
+    font-family: $main-font;
+    color: white; 
+    text-align: center; 
+}
+
+
+.nav__link { 
+    font-family: $main-font;
+    color: white;
+    text-decoration: none;
+}
