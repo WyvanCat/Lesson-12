@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 1px) { 
     .jap-img { 
-        background-image: url('../Images/bitmap-small.png');
+        background-image: url('../Images/Bitmap-small.png');
     }
 
     h1 { 
@@ -36,11 +36,12 @@
         max-width: 574px;
         width: 100%;
     }
+}
 
 
 @media screen and (min-width: 1440px) { 
     .jap-img { 
-        background-image: url('../Images/Bitmap-big.png');
+        background-image: url('../Images/bitmap-big.png');
     }
     h1 { 
         font-size: 82px;
