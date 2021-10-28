@@ -6,26 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav__logo">Head.</div>
-        <div class="nav__links">
-            <a href="" class="nav__link">Works</a>
-            <a href="" class="nav__link">Services</a>
-            <a href="" class="nav__link">Contacts</a>
-        </div>
-    </nav>
+
+    <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#works">Works</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+    </div>
     
     <div class="text">
         <h1>Japan</h1>
         <h2>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</h2>
     </div>
 
-    <img class="jap-img" src="Images/bitmap-medium.png" alt="japan">
+    <picture class="jap-img">
+      <source media="(max-width: 800px)" srcset="./Images/Bitmap-small.png">
+      <source media="(max-width: 1000px)" srcset="./Images/bitmap-medium.png">
+      <source media="(min-width: 1001px)" srcset="./Images/bitmap-big.png">
+      <img src="Images/Bitmap-small.png" alt="japan-img">
+    </picture>
+
+
     
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
 </body>
 </html>
